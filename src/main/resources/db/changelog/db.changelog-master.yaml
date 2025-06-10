@@ -1,0 +1,64 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: yourname
+      changes:
+        - createTable:
+            tableName: shops
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(255)
+              - column:
+                  name: address
+                  type: varchar(255)
+              - column:
+                  name: phone
+                  type: varchar(50)
+              - column:
+                  name: email
+                  type: varchar(255)
+              - column:
+                  name: website
+                  type: varchar(255)
+              - column:
+                  name: category
+                  type: varchar(255)
+              - column:
+                  name: description
+                  type: text
+  - changeSet:
+      id: 2
+      author: yourname
+      changes:
+        - insert:
+            tableName: shops
+            columns:
+              - column:
+                  name: name
+                  value: 'Магазин №1'
+              - column:
+                  name: address
+                  value: 'ул Володимирська, 19а'
+              - column:
+                  name: phone
+                  value: '123-456-7890'
+              - column:
+                  name: email
+                  value: 'shop1@example.com'
+              - column:
+                  name: website
+                  value: 'http://shop1.com'
+              - column:
+                  name: category
+                  value: 'Продовольственный'
+              - column:
+                  name: description
+                  value: 'Один из лучших магазинов.'
