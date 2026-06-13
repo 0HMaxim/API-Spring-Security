@@ -8,3 +8,12 @@ The USER can view the list of stores and store information
 Access control via Spring Security (ADMIN, USER roles)
 
 Data is stored in an in-memory H2 database
+
+
+https://api-spring-security.onrender.com
+
+
+access:
+login, pass:
+User user123
+admin admin123
