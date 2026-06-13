@@ -43,10 +43,10 @@ databaseChangeLog:
             columns:
               - column:
                   name: name
-                  value: 'Магазин №1'
+                  value: 'Shop No. 1'
               - column:
                   name: address
-                  value: 'ул Володимирська, 19а'
+                  value: '19a Volodymyrska St'
               - column:
                   name: phone
                   value: '123-456-7890'
@@ -58,7 +58,7 @@ databaseChangeLog:
                   value: 'http://shop1.com'
               - column:
                   name: category
-                  value: 'Продовольственный'
+                  value: 'Grocery'
               - column:
                   name: description
-                  value: 'Один из лучших магазинов.'
+                  value: 'One of the best shops.'
