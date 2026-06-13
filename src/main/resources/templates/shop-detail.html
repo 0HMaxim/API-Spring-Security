@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Детали магазина</title>
+    <title>Shop Details</title>
 </head>
 <body>
-<h1>Детали магазина</h1>
+<h1>Shop Details</h1>
 
 <div>
-    <h2 th:text="${shop.name}">Название магазина</h2>
-    <p><strong>Адрес:</strong> <span th:text="${shop.address}">Адрес</span></p>
-    <p><strong>Телефон:</strong> <span th:text="${shop.phone}">Телефон</span></p>
+    <h2 th:text="${shop.name}">Shop Name</h2>
+    <p><strong>Address:</strong> <span th:text="${shop.address}">Address</span></p>
+    <p><strong>Phone:</strong> <span th:text="${shop.phone}">Phone</span></p>
     <p><strong>Email:</strong> <span th:text="${shop.email}">Email</span></p>
-    <p><strong>Сайт:</strong> <a th:href="${shop.website}" th:text="${shop.website}">Сайт</a></p>
-    <p><strong>Категория:</strong> <span th:text="${shop.category}">Категория</span></p>
-    <p><strong>Описание:</strong> <span th:text="${shop.description}">Описание</span></p>
+    <p><strong>Website:</strong> <a th:href="${shop.website}" th:text="${shop.website}">Website</a></p>
+    <p><strong>Category:</strong> <span th:text="${shop.category}">Category</span></p>
+    <p><strong>Description:</strong> <span th:text="${shop.description}">Description</span></p>
 </div>
 
-<a href="/shops">Назад к списку магазинов</a>
+<a href="/shops">Back to shop list</a>
 </body>
 </html>
